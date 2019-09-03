@@ -1,0 +1,96 @@
+﻿body {
+    display: block;
+    margin: 8px;
+    padding: 100p
+    font-family:Baskerville Old Face, Century Schoolbook, papyrus;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #F2F4F4 ;
+}
+ 
+a {
+  text-decoration: none;
+}
+
+#navbar {
+    float:left
+    display:block
+    position: relative;
+    bottom: right;
+    right:0;
+    width: 100%;
+    font-family:Baskerville Old Face, papyrus;
+    
+    margin:0pt;
+}
+
+#navbar ul {
+  background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#navbar li {
+    color: #fff;
+  background: darkorange;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+#navbar li a {
+  color: #fff;
+}
+
+#navbar li:hover {
+    background: red;
+    cursor: pointer;
+}
+
+#navbar ul li ul {
+    background: orange;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+#navbar ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+#navbar ul li ul li {
+    clear: both;
+  width: 100%;
+}
+
+ #banner {
+  width:100%;
+  height:50pt;
+  display:flex;
+  position: relative;
+  border: solid;
+  //background-color:darkorange;
+}
+
+#content {
+  
+  position: absolute;
+  left:152pt;
+  transform: translateX(-50%);
+}
+
